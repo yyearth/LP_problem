@@ -16,7 +16,7 @@ data_result = data(2501:3000, 3);
 
 figure(3)
 svm_struct = svmtrain(data(1:2500, 1:2),data(1:2500, 3), ...
-    'Kernel_Function','polynomial', 'showplot',true);
+    'Kernel_Function','linear', 'showplot',true);
 
 classes = svmclassify(svm_struct,data_test,...
     'showplot',true);
