@@ -14,8 +14,8 @@ dose_mat = DoseMatrix;
 
 % options = optimset('MaxFunEvals',200000);
 
-[a, fval] = fgoalattain(@obj_fun, ones(594, 1), [-85, 45], [10, 1],[],[],...
-    [],[],zeros(594, 1),[])
+ [a, fval] = fgoalattain(@obj_fun, ones(594, 1), [-85, 45], [10, 1],[],[],...
+%     [],[],zeros(594, 1),[])
 
 % fgoalattain(fun,x0,goal,weight,A,b,Aeq,beq,lb,ub,nonlcon,options)
 
